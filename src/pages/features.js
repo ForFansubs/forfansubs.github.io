@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { IndexPage, EpisodePage, IndexTheme, SearchIndex, WebhookIndex, AdminIndexPage } from '../config/assets/index'
+import { IndexPage, EpisodePage, IndexTheme, SearchIndex, WebhookIndex, AdminIndexPage, MangaEpisodePage, MOTD, ResponsiveDesign } from '../config/assets/index'
 import { FeaturePanel } from '../components/features/index'
 import { Grid } from '@material-ui/core'
 
@@ -12,9 +12,21 @@ export default () => {
             image: IndexPage
         },
         {
-            title: "İzleme Kısmı",
+            title: "Anime İzleme Özelliği",
             description: "İzleyicilerinize sadece indirme linki değil, izleme linklerini de sunabilirsiniz!\nYetersizlikler yüzüden sitenizde sadece indirme linklerinin bulunmasından sıkılmadınız mı? Artık sitenizde izleme bölümü de var.",
             image: EpisodePage,
+            duration: "2000ms"
+        },
+        {
+            title: "Manga Okuma Özelliği",
+            description: "Manga çevirisi yapıyorsunuz ama mangalarınızı hep farklı sitelere yüklemeniz mi gerekiyor? Ya da yine kendiniz hostluyorsunuzdur ancak forum/blog yazılımınızın yanında ikinci bir yazılımla.\n\nBöyle şeylere gerek yok, çünkü her şey bir yerde olunca hayat daha kolay.",
+            image: MangaEpisodePage,
+            duration: "2000ms"
+        },
+        {
+            title: "Duyuru Ekleme",
+            description: "Ana sayfa, anime ve manga sayfaları, ayrıca anime ve manga bölümlerine özel duyurular ekleyebilirsiniz.",
+            image: MOTD,
             duration: "2000ms"
         },
         {
@@ -27,7 +39,14 @@ export default () => {
         {
             title: "İstediğinizi Arayın",
             description: "\"Admin, türüne göre arama yok mu?\"\nNeden olmasın, o da var.",
-            image: SearchIndex,
+            image: SearchIndex
+        },
+        {
+            title: "Responsive Tasarım",
+            description: "\"Masaüstünde güzel duruyor da, mobilde durumlar nasıl?\" \n\n Responsive design kullanmayan siteler çok eskide kalmadı mı zaten?",
+            subtitle: <>(<a href={ResponsiveDesign} target="_blank" rel="noopener noreferrer">Buraya tıklayarak resmin büyük halini görebilirsiniz.</a>)</>,
+            image: ResponsiveDesign,
+            duration: "20000ms"
         },
         {
             title: "Discord'a Otomatik Bildirim",

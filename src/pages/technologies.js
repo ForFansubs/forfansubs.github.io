@@ -37,12 +37,7 @@ export default () => {
             logo: Technologies,
             link: "https://material-ui.com/",
             offset: [411, 492]
-        }, {
-            title: "styled-components",
-            logo: Technologies,
-            link: "https://styled-components.com/",
-            offset: [492, 558]
-        },
+        }
     ]
 
     return (

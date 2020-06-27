@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { PuzzleSubsLogo, FGLLogo } from '../config/assets/index'
+import { PuzzleSubsLogo, FGLLogo, AnimeWhoLogo } from '../config/assets/index'
 import { UsersPanel } from '../components/users/index'
 import { Grid } from '@material-ui/core'
 
@@ -15,6 +15,11 @@ export default () => {
             title: "PuzzleSubs",
             logo: PuzzleSubsLogo,
             link: "https://puzzlesubs.com/"
+        },
+        {
+            title: "AnimeWho",
+            logo: AnimeWhoLogo,
+            link: "https://animewho.com/"
         }
     ]
 

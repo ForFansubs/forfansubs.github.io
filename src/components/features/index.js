@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 function FeaturePanel(props) {
-    const { image, title, description, side, end, index, disableAnimation } = props
+    const { image, title, description, subtitle, side, end, index, disableAnimation } = props
     const [exit, setExit] = useState(true)
     const classes = useStyles(props)
 
@@ -56,6 +56,14 @@ function FeaturePanel(props) {
                         <Typography variant="subtitle1">
                             {description}
                         </Typography>
+                        {subtitle ?
+                            <>
+                                <br />
+                                <br />
+                                <Typography variant="subtitle1">
+                                    {subtitle}
+                                </Typography>
+                            </> : ""}
                     </Box>
                 </Grid>
                 <Grid item lg={7} md={6} xs={12}>
@@ -98,6 +106,7 @@ function FeaturePanel(props) {
 FeaturePanel.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    subtitle: PropTypes.object,
     image: PropTypes.string.isRequired,
     height: PropTypes.string,
     duration: PropTypes.string,
