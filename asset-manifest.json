@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.7c6c527a.chunk.css",
-    "main.js": "/static/js/main.2e568a11.chunk.js",
-    "main.js.map": "/static/js/main.2e568a11.chunk.js.map",
+    "main.js": "/static/js/main.a03bd6a6.chunk.js",
+    "main.js.map": "/static/js/main.a03bd6a6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8e191f76.js",
     "runtime-main.js.map": "/static/js/runtime-main.8e191f76.js.map",
-    "static/js/2.7b43e016.chunk.js": "/static/js/2.7b43e016.chunk.js",
-    "static/js/2.7b43e016.chunk.js.map": "/static/js/2.7b43e016.chunk.js.map",
+    "static/js/2.b8d0cac7.chunk.js": "/static/js/2.b8d0cac7.chunk.js",
+    "static/js/2.b8d0cac7.chunk.js.map": "/static/js/2.b8d0cac7.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.aa97edc2a6c5437ff599b0d7841215ca.js": "/precache-manifest.aa97edc2a6c5437ff599b0d7841215ca.js",
+    "precache-manifest.4c622579dec36fddc1803e849bdf65e4.js": "/precache-manifest.4c622579dec36fddc1803e849bdf65e4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.7c6c527a.chunk.css.map": "/static/css/main.7c6c527a.chunk.css.map",
-    "static/js/2.7b43e016.chunk.js.LICENSE.txt": "/static/js/2.7b43e016.chunk.js.LICENSE.txt",
-    "static/media/AdminIndexPage.png": "/static/media/AdminIndexPage.39093cb4.png",
-    "static/media/EpisodePage.png": "/static/media/EpisodePage.2b36bcc2.png",
-    "static/media/IndexPage.png": "/static/media/IndexPage.2a0f9d64.png",
-    "static/media/IndexTheme.gif": "/static/media/IndexTheme.48e4e4f3.gif",
-    "static/media/SearchIndex.png": "/static/media/SearchIndex.90313887.png",
+    "static/js/2.b8d0cac7.chunk.js.LICENSE.txt": "/static/js/2.b8d0cac7.chunk.js.LICENSE.txt",
+    "static/media/AdminIndexPage.png": "/static/media/AdminIndexPage.f5847e39.png",
+    "static/media/EpisodePage.png": "/static/media/EpisodePage.5a71279d.png",
+    "static/media/IndexPage.png": "/static/media/IndexPage.1aee5708.png",
+    "static/media/IndexTheme.gif": "/static/media/IndexTheme.b5d6945d.gif",
+    "static/media/MOTD.png": "/static/media/MOTD.c6119cda.png",
+    "static/media/MangaEpisodePage.png": "/static/media/MangaEpisodePage.eb33bdf5.png",
+    "static/media/ResponsiveDesign.png": "/static/media/ResponsiveDesign.d60c91f5.png",
+    "static/media/SearchIndex.png": "/static/media/SearchIndex.b06b15b0.png",
     "static/media/WebhookIndex.png": "/static/media/WebhookIndex.6034299b.png",
     "static/media/animewho.png": "/static/media/animewho.8bf04a69.png",
     "static/media/overrides.scss": "/static/media/bg.dcc2bad2.png",
@@ -29,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8e191f76.js",
-    "static/js/2.7b43e016.chunk.js",
+    "static/js/2.b8d0cac7.chunk.js",
     "static/css/main.7c6c527a.chunk.css",
-    "static/js/main.2e568a11.chunk.js"
+    "static/js/main.a03bd6a6.chunk.js"
   ]
 }
