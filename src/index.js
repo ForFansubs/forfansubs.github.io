@@ -1,7 +1,8 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './overrides.scss'
+import { SnackbarProvider } from 'notistack';
 
 import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -30,11 +31,15 @@ function Mount() {
 
     return (
         <>
-            <ThemeProvider theme={themeObject}>
-                <CssBaseline>
-                    <App />
-                </CssBaseline>
-            </ThemeProvider>
+            <StrictMode>
+                <ThemeProvider theme={themeObject}>
+                    <CssBaseline>
+                        <SnackbarProvider maxSnack={3}>
+                            <App />
+                        </SnackbarProvider>
+                    </CssBaseline>
+                </ThemeProvider>
+            </StrictMode>
         </>
     )
 }

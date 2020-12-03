@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Box, makeStyles, Tooltip, Grid } from '@material-ui/core'
+import { Box, makeStyles, Grid } from '@material-ui/core'
+import { grey } from '@material-ui/core/colors'
+import Tooltip from '../Tooltip'
 
 const useStyles = makeStyles(theme => ({
     LogoContainer: {
@@ -31,7 +33,7 @@ function TechPanel(props) {
         <>
             <Grid item>
                 <a target="_blank" href={link} rel="noopener noreferrer">
-                    <Tooltip title={title}>
+                    <Tooltip title={title} classes={classes}>
                         <Box className={classes.LogoContainer} />
                     </Tooltip>
                 </a>

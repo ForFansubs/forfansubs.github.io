@@ -12,3 +12,19 @@ body {
     background-image: url("./assets/images/bg.png");
     background-repeat: repeat;
 }
+
+@font-face {
+    font-family: "Geomanist Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("./assets/fonts/Geomanist Regular Italic"),
+        url("./assets/fonts/Geomanist-Regular-Italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Geomanist";
+    font-style: normal;
+    font-weight: normal;
+    src: local("./assets/fonts/Geomanist Regular"),
+        url("./assets/fonts/Geomanist-Regular.woff") format("woff");
+}

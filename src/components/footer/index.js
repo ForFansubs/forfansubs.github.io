@@ -12,11 +12,14 @@ const useStyles = makeStyles(theme => ({
         boxShadow: theme.shadows[6]
     },
     Panel: {
-        marginTop: `${theme.spacing(2)}px`
+        margin: theme.spacing(2, 0)
     },
     Copyright: {
         textDecoration: "none",
         color: theme.palette.text.primary
+    },
+    CopyrightText: {
+        fontSize: "0.875rem"
     },
     Dot: {
         fontSize: "2.4em",
@@ -39,14 +42,14 @@ function BigDot({ classes }) {
     return <span className={classes.Dot}>•</span>
 }
 
-export default () => {
+export default function Footer() {
     const classes = useStyles()
     return (
         <>
             <Grid container className={classes.Grid} justify="center">
                 <Grid item xs={11} className={classes.Panel}>
                     <a href="https://ayberktandogan.github.io/" rel="noopener noreferrer" target="_blank" className={classes.Copyright}>
-                        <Typography variant="h6">ayberktandogan &copy; {(new Date()).getFullYear()}</Typography>
+                        <Typography variant="h6" component="p" className={classes.CopyrightText}>ayberktandogan &copy; {(new Date()).getFullYear()}</Typography>
                     </a>
                     <a href="https://github.com/ForFansubs/" target="_blank" rel="noopener noreferrer" className={classes.Link}>
                         <FontAwesomeIcon className={classes.icon} icon={faGithub} size="2x" />

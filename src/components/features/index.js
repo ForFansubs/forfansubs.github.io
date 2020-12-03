@@ -6,6 +6,10 @@ import { isMobile } from 'react-device-detect';
 import clsx from 'clsx'
 
 const useStyles = makeStyles(theme => ({
+    HeaderText: {
+    },
+    SubtitleText: {
+    },
     ImageContainer: {
         backgroundImage: props => `url("${props.image}")`,
         backgroundSize: "cover",
@@ -50,10 +54,10 @@ function FeaturePanel(props) {
 
                 <Grid item lg={5} md={6} xs={12}>
                     <Box display="flex" flexDirection="column" justifyContent="center">
-                        <Typography variant="h4">
+                        <Typography variant="h4" className={classes.HeaderText} gutterBottom>
                             {index}. {title}
                         </Typography>
-                        <Typography variant="subtitle1">
+                        <Typography variant="subtitle1" className={classes.SubtitleText}>
                             {description}
                         </Typography>
                         {subtitle ?
@@ -74,7 +78,6 @@ function FeaturePanel(props) {
                         onMouseEnter={disableAnimation ? () => null : () => setExit(!exit)}
                     />
                 </Grid>
-                {end ? "" : <Grid item xs={12}><Divider /></Grid>}
             </>
         )
     }
@@ -91,14 +94,13 @@ function FeaturePanel(props) {
                     />
                 </Grid>
                 <Grid item lg={5} md={6} xs={12}>
-                    <Typography variant="h4">
+                    <Typography variant="h4" className={classes.HeaderText} gutterBottom>
                         {index}. {title}
                     </Typography>
-                    <Typography variant="subtitle1">
+                    <Typography variant="subtitle1" className={classes.SubtitleText}>
                         {description}
                     </Typography>
                 </Grid>
-                {end ? "" : <Grid item xs={12}><Divider /></Grid>}
             </>
         )
 }

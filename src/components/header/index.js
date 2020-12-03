@@ -2,7 +2,8 @@ import React from 'react'
 
 import { HeaderLogo } from '../../config/assets/index'
 import { makeStyles } from '@material-ui/styles'
-import { Typography, Box, Tooltip } from '@material-ui/core'
+import { Typography, Box } from '@material-ui/core'
+import Tooltip from '../Tooltip'
 
 const useStyles = makeStyles(theme => ({
     HeaderLogo: {
@@ -21,15 +22,17 @@ const useStyles = makeStyles(theme => ({
             lineHeight: ".8"
         },
         "& span": {
-            [theme.breakpoints.down('md')]: {
-                marginLeft: "2.6em",
-                fontSize: `${theme.typography.subtitle1.fontSize.replace('rem', '')}rem`,
-            },
             [theme.breakpoints.down('sm')]: {
-                marginLeft: "2.7em",
+                marginLeft: "-1.6em",
                 fontSize: `${theme.typography.subtitle1.fontSize.replace('rem', '') - 0.2}rem`
             },
-            marginLeft: "2.9em"
+            marginLeft: "3.1em"
+        },
+        [theme.breakpoints.down('sm')]: {
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center"
         }
     }
 }))
@@ -41,7 +44,7 @@ export default () => {
         <>
             <Box className={classes.HeaderText}>
                 <img className={classes.HeaderLogo} src={HeaderLogo} alt="Header logo" />
-                <Tooltip aria-label="add" title="Her şey derken daha geliştirilmesi devam eden bir proje olduğumuzu unutmayın.">
+                <Tooltip aria-label="add" title="Her şey derken daha geliştirilmesi devam eden bir proje olduğumuzu unutmayın." classes={classes}>
                     <Typography variant="subtitle1">İhtiyacınız olan her şey*. Bir yerde.</Typography>
                 </Tooltip>
             </Box>

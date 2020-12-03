@@ -1,10 +1,8 @@
-import React from 'react'
-
 import { Technologies } from '../config/assets/index'
 import { TechPanel } from '../components/technologies/index'
 import { Grid } from '@material-ui/core'
 
-export default () => {
+export default function TechnologiesPage() {
     const TechList = [
         {
             title: "React",
@@ -15,18 +13,20 @@ export default () => {
         {
             title: "Javascript",
             logo: Technologies,
-            link: "https://www.javascript.com/",
+            link: "https://developer.mozilla.org/tr/docs/Web/JavaScript",
             offset: [71, 135]
         }, {
             title: "NodeJS",
             logo: Technologies,
             link: "https://nodejs.org/",
-            offset: [135, 237]
+            offset: [135, 237],
+            invert: true
         }, {
             title: "ExpressJS",
             logo: Technologies,
             link: "https://expressjs.com/",
-            offset: [237, 347]
+            offset: [237, 347],
+            invert: true
         }, {
             title: "MariaDB",
             logo: Technologies,

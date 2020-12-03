@@ -1,18 +1,9 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { unstable_createMuiStrictModeTheme } from '@material-ui/core/styles';
 
 const theme = {
     palette: {
-        primary: { main: '#6255AF' },
+        primary: { main: '#cc30ff' },
         secondary: { main: 'rgb(255,127,80)' },
-        background: {
-            default: "rgb(255,255,255)",
-            level1: "rgb(236,236,236)",
-            level2: "rgb(246,246,246)",
-            paper: "rgb(255,255,255)"
-        },
-        text: {
-            primary: "rgba(0, 0, 0, 0.74)"
-        },
         contrastThreshold: 3,
     },
     props: {
@@ -26,50 +17,50 @@ const theme = {
         },
     },
     typography: {
-        fontFamily: `'Rubik', sans-serif`,
+        fontFamily: `'Geomanist', sans-serif`,
         h1: {
             fontWeight: "bold",
-            fontSize: "4.8rem",
+            fontSize: "4.25rem",
             lineHeight: 1.2
         },
         h2: {
             fontWeight: "bold",
-            fontSize: "3rem",
+            fontSize: "3.5rem",
             lineHeight: 1.2
         },
         h3: {
             fontWeight: "bold",
-            fontSize: "2.4rem",
+            fontSize: "3rem",
             lineHeight: 1.2
         },
         h4: {
             fontWeight: "bold",
-            fontSize: "1.7rem"
+            fontSize: "2rem"
         },
         h5: {
             fontWeight: "bold",
-            fontSize: "1rem"
+            fontSize: "1.25rem"
         },
         h6: {
             fontWeight: "bold",
-            fontSize: ".8rem"
+            fontSize: ".75rem"
         },
         body1: {
-            fontFamily: "'Source Sans Pro', sans-serif",
-            fontSize: "1.4rem"
+            fontFamily: "'Open Sans', sans-serif",
+            fontSize: "1.125rem"
         },
         body2: {
-            fontFamily: "'Source Sans Pro', sans-serif",
-            fontSize: "1.2rem"
+            fontFamily: "'Open Sans', sans-serif",
+            fontSize: "0.875rem"
         },
         subtitle1: {
-            fontFamily: "'Source Sans Pro', sans-serif",
-            fontSize: "1.2rem",
-            lineHeight: 1.2
+            fontFamily: "'Open Sans', sans-serif",
+            fontSize: "1.125rem",
+            lineHeight: 1.3
         },
         subtitle2: {
-            fontFamily: "'Source Sans Pro', sans-serif",
-            fontSize: "1.0rem"
+            fontFamily: "'Open Sans', sans-serif",
+            fontSize: "0.875rem"
         }
     },
     overrides: {
@@ -85,8 +76,7 @@ const theme = {
         },
         MuiTooltip: {
             tooltip: {
-                backgroundColor: "#000",
-                fontSize: ".8em"
+                fontFamily: "'Open Sans', sans-serif"
             }
         }
     },
@@ -102,4 +92,4 @@ const theme = {
     themeName: 'ForFansubs Light Theme'
 }
 
-export default createMuiTheme({ ...theme })
+export default unstable_createMuiStrictModeTheme({ ...theme })

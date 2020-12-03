@@ -1,32 +1,33 @@
-import React from 'react'
-
 import Technologies from './technologies'
 import Features from './features'
 import Users from './users'
 import Plans from './plans'
 
-import { Grid, Box, Typography, makeStyles } from '@material-ui/core'
+import { Grid, Box, Typography, makeStyles, Divider } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
     Grid: {
         marginTop: `${theme.spacing(8)}px`
     },
     Titles: {
-        marginLeft: `${theme.spacing(4)}px`
+        padding: theme.spacing(2, 4),
+        fontFamily: "'Heebo', sans-serif",
+        fontWeight: 900,
+        backgroundColor: theme.palette.background.paper,
+        color: theme.palette.getContrastText(theme.palette.background.paper)
     }
 }))
 
 function GridProps(classes) {
     return ({
         item: true,
-        md: 11,
+        md: 12,
         xs: 12,
         className: classes.Grid
     })
 }
 
 const BoxProps = {
-    boxShadow: 6,
     p: 4,
     bgcolor: "background.paper"
 }
@@ -49,6 +50,7 @@ export default () => {
                 <Typography className={classes.Titles} variant="h3">
                     Özellikler
                 </Typography>
+                <Divider />
                 <Box {...BoxProps}>
                     <Features />
                 </Box>
@@ -65,6 +67,7 @@ export default () => {
                 <Typography className={classes.Titles} variant="h3">
                     Planlar
                 </Typography>
+                <Divider />
                 <Box {...BoxProps}>
                     <Plans />
                 </Box>
